@@ -20,4 +20,6 @@ include("summaries.jl")
 
 include("utils.jl")
 
+include("images.jl")
+
 end
