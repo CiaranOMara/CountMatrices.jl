@@ -41,10 +41,17 @@ M = CountMatrix(windows)
 
 # Sort windows to place the most significant at the top of the data matrix.
 # M.m .= sortslices(M.m, by = sum, dims = 2, rev = true)
+```
 
+```@example quickstart
+palette = ColorSchemes.balance
+```
+
+```@example quickstart
 # Get RGBA matrix.
-path, io, c = CountMatrices.draw(M; palette = ColorSchemes.balance, rangescale = :extrema, scale = log10)
+path, io, c = CountMatrices.draw(M; palette, rangescale = :extrema, scale = log10)
 
+# Show RGBA matrix.
 c
 ```
 
